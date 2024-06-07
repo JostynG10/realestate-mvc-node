@@ -1,0 +1,45 @@
+{
+  "name": "real_estate_node_mvc",
+  "version": "1.0.0",
+  "description": "Real estate project created with Node.js using the MVC (Model-View-Controller).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist",
+    "start": "node ./dist/index.js",
+    "dev": "nodemon --exec babel-node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JostynG10/RealEstate-Node-MVC.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "mvc",
+    "pug",
+    "tailwind",
+    "mysql",
+    "sequelize",
+    "express"
+  ],
+  "author": "Jostyn Gómez Alzate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JostynG10/RealEstate-Node-MVC/issues"
+  },
+  "homepage": "https://github.com/JostynG10/RealEstate-Node-MVC#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/node": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "nodemon": "^3.1.3"
+  }
+}
