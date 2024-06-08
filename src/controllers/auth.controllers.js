@@ -5,8 +5,12 @@
 
 /* ========== Functions ========== */
 function login(req, res) {
-  res.render("auth/login", { authenticated: false });
+  res.render("auth/login", {});
+}
+
+function register(req, res) {
+  res.render("auth/register", {});
 }
 
 /* ========== Exporting models ========== */
-export { login };
+export { login, register };

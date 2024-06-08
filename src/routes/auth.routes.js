@@ -8,7 +8,9 @@ import express from "express";
 const router = express.Router();
 
 /* ========== Get methods ========== */
-router.get("/", authControllers.login);
+router.get("/login", authControllers.login);
+
+router.get("/register", authControllers.register)
 
 /* ========== Exporting models ========== */
 export default router;
