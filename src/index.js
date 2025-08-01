@@ -11,6 +11,8 @@ const app = express();
 // Enables views with Pug
 app.set("view engine", "pug");
 app.set("views", "./src/views");
+// Public directory for static files
+app.use(express.static("public"));
 // Load the routes
 app.use("/", routes);
 // Start the server
